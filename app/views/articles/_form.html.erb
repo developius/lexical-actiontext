@@ -18,7 +18,10 @@
 
   <div>
     <%= form.label :body, style: "display: block" %>
-    <%= form.rich_text_area :body %>
+    <div data-controller="lexical">
+      <%= tag.div data:{ lexical_target: "editor" }, style: "width: 500px; height: 500px;", contenteditable: true %>
+      <%= form.hidden_field :body, data: { lexical_target:"input" }, value: article.body&.body&.to_html %>
+    </div>
   </div>
 
   <div>
