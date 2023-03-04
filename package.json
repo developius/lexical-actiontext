@@ -4,8 +4,14 @@
   "dependencies": {
     "@hotwired/stimulus": "^3.2.1",
     "@hotwired/turbo-rails": "^7.3.0",
+    "@lexical/clipboard": "^0.8.1",
+    "@lexical/history": "^0.8.1",
+    "@lexical/html": "^0.8.1",
+    "@lexical/link": "^0.8.1",
+    "@lexical/rich-text": "^0.8.1",
     "@rails/actiontext": "^7.0.4-2",
     "esbuild": "^0.17.11",
+    "lexical": "^0.8.1",
     "trix": "^2.0.4"
   },
   "scripts": {
